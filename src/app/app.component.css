@@ -1,0 +1,11 @@
+/* app.component.css */
+
+div {
+    background-image: url('/images/image.jpg'); /* Ruta relativa a la imagen en la carpeta assets */
+    background-size: cover; /* Ajusta el tamaño para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    margin: 0; /* Elimina los márgenes por defecto del cuerpo */
+    font-family: Arial, sans-serif; /* Establece la fuente por defecto */
+  }
+  

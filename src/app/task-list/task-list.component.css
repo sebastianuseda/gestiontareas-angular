@@ -1,0 +1,40 @@
+mat-card {
+    margin-top: 20px;
+    width: 50dvw;
+    padding: 12px;
+}
+
+mat-card-header {
+    width: 100%;
+}
+
+
+
+mat-card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  button {
+    background-color: #2550dd;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+ button:hover {
+    background-color: #2fc5eb;
+  }
+  
+  /* Optional: Styles for the 'MARK AS DONE' button */
+  button.mark-as-done {
+    background-color: #28a745;
+  }
+  
+  button.mark-as-done:hover {
+    background-color: #218838;
+  }

@@ -1,0 +1,18 @@
+<div>
+    <mat-form-field>
+        <mat-label>Ingresar Email</mat-label>
+        <input matInput placeholder="john@gmail.com" [formControl]="email" required>
+        @if (email.invalid) {
+        <mat-error>{{getErrorMessage()}}</mat-error>
+        }
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+    <button mat-button (click)="login()">INICIAR SESION</button>
+</div>

@@ -1,0 +1,14 @@
+<br>
+@for(task of tasks; track task.id) {
+    <mat-card >
+        <mat-card-header>
+            <mat-card-title>{{task.title}}</mat-card-title>
+            <mat-card-subtitle>{{task.description}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions>
+            <button mat-button [routerLink]="['/edit-task', task.id]">EDITAR TAREA</button>
+            <button mat-button (click)="removeTask(task.id)">TERMINAR TAREA</button>
+        </mat-card-actions>
+    </mat-card>
+    <br>
+}
